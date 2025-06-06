@@ -6,23 +6,25 @@
     <title>Matt Devine</title>
 <style>
     /* This CSS block will style your page */
+    html, body {
+        height: 100%; /* Ensure both html and body take up full height */
+        margin: 0;   /* Remove default margins */
+    }
     body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         line-height: 1.6;
         color: #333;
         background-color: #fdfdfd;
         
-        /* New styles for vertical and horizontal centering */
-        min-height: 100vh;             /* Make the body at least the full height of the viewport */
-        display: flex;                /* Turn the body into a flex container */
-        align-items: center;          /* Vertically center the content */
-        justify-content: center;      /* Horizontally center the content */
-        margin: 0;                    /* Remove default body margin */
+        /* Use Flexbox for centering */
+        display: flex;
+        align-items: center;      /* Vertically center */
+        justify-content: center;  /* Horizontally center */
     }
     .container {
-        max-width: 800px;             /* Sets the maximum width of the content area */
-        padding: 2rem;                /* Adds some space on the sides of the content */
-        text-align: left;             /* Ensure text within the container is left-aligned */
+        max-width: 800px;         /* Sets the maximum width of the content area */
+        padding: 2rem;            /* Adds some space on the sides of the content */
+        text-align: left;         /* Keeps the text inside aligned to the left */
     }
     a {
         color: #007bff;
@@ -34,6 +36,7 @@
 </head>
 <body>
 
+<!-- This container div wraps all your content -->
 <div class="container">
 
     <h1>Matt Devine</h1>
