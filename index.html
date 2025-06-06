@@ -5,29 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matt Devine</title>
 <style>
-        /* This CSS block will style your page */
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #fdfdfd; /* A slightly off-white background */
-        }
-        .container {
-            max-width: 800px; /* Sets the maximum width of the content area */
-            margin: 0 auto;   /* This is the key part: it centers the block horizontally */
-            padding: 2rem;    /* Adds some space on the sides of the content */
-        }
-        a {
-            color: #007bff;
-        }
-        h1, h3 {
-            color: #111;
-        }
-    </style>
+    /* This CSS block will style your page */
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fdfdfd;
+        
+        /* New styles for vertical and horizontal centering */
+        min-height: 100vh;             /* Make the body at least the full height of the viewport */
+        display: flex;                /* Turn the body into a flex container */
+        align-items: center;          /* Vertically center the content */
+        justify-content: center;      /* Horizontally center the content */
+        margin: 0;                    /* Remove default body margin */
+    }
+    .container {
+        max-width: 800px;             /* Sets the maximum width of the content area */
+        padding: 2rem;                /* Adds some space on the sides of the content */
+        text-align: left;             /* Ensure text within the container is left-aligned */
+    }
+    a {
+        color: #007bff;
+    }
+    h1, h3 {
+        color: #111;
+    }
+</style>
 </head>
 <body>
 
-    <h1>Matt Devinek</h1>
+<div class="container">
+
+    <h1>Matt Devine</h1>
 
     <p>Still struggling to sit still.</p>
 
@@ -37,18 +46,15 @@
         <li>Studied at Notre Dame (BA) and Stanford GSB (MBA), Fighting Irish on account of the redhair</li>
         <li>Early career in public policy Washington, DC followed by media/entertainment at NBCUniversal (NBC News, SNL) in NYC </li>
         <li>Now at Google's Corp Dev, strategic investments & acquisitions, for Google DeepMind, YouTube, & Cloud AI</li>
-          </ul>
+    </ul>
 
     <h3>Some things I believe:</h3>
     <ul>
         <li>
             <p><b>Knowing what you want is powerful, being willing to say go after it is a superpower</b></p>
-                   </ul>
         </li>
         <li>
             <p><b>Work on really hard problems with really good people; the rest will fall into place</b></p>
-            <ul>
-            </ul>
         </li>
         <li>
             <p><b>Reach back and help.</b></p>
@@ -61,11 +67,10 @@
     <h3>Investing 101:</h3>
     <ul>
         <li>Currently investing in AI - mostly Generative media, consumer, and developer tools.</li>
-            <li>You can email me: <a href="mailto:matthewmdevine@gmail.com">matthewmdevine@gmail.com</a></li>
+        <li>You can email me: <a href="mailto:matthewmdevine@gmail.com">matthewmdevine@gmail.com</a></li>
     </ul>
 
-  
-  </div>
+</div>
 
 </body>
 </html>
